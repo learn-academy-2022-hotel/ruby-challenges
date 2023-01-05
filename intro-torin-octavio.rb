@@ -39,10 +39,34 @@ p ruby_language.swapcase
 # "GOOD STUFF"
 p ruby_language.capitalize.swapcase
 # "gOOD STUFF"
+
+# titleize
+
 # Create an array that contains the name of at least five TV shows you enjoy.
+enjoyable_shows = ['GOT', 'KOTH', 'WLIIA', 'The Office', 'Broad City']
 # Find the length of the array.
+p enjoyable_shows.length
 # Return the first item in the array.
+p enjoyable_shows.first
 # Return the fourth item in the array.
+p enjoyable_shows[3]
 # Permanently reverse the order of the array.
+enjoyable_shows.reverse!
+p enjoyable_shows
 # Create a new empty array for your top favorite TV shows.
+top_shows = []
 # Using the full TV show array, add your top two favorite shows to the empty array.
+top_shows<<enjoyable_shows[0]<<enjoyable_shows[3]
+p top_shows 
+
+
+# # curiosities
+# top_shows<<enjoyable_shows.first<<enjoyable_shows.last
+# # top_shows<<enjoyable_shows[0, 1] # [["Broad City"]]
+# # p enjoyable_shows[0, 2] #["Broad City", "The Office"]
+# # top_shows<<enjoyable_shows[0, 2] # [["Broad City"]]
+# p enjoyable_shows.append('another show') #["Broad City", "The Office", "WLIIA", "KOTH", "GOT", "another show"]
+# p enjoyable_shows.insert(2, 'yet another show') #["Broad City", "The Office", "yet another show", "WLIIA", "KOTH", "GOT", "another show"]
+# p enjoyable_shows.insert(3, '7').insert(4, '12')
+
+
