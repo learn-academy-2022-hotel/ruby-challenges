@@ -42,43 +42,77 @@
 # end 
 # p max_num([1,2,6,4,5])
 # Create a method that takes in an array of words and returns the word with the least number of characters.
-def lowest_chars(array)
-      array.min
-end
+# def lowest_chars(array)
+#       array.min
+# end
 
-p lowest_chars(['car','goat','house'])
-# Create a method that takes in an array of numbers and returns only the odd numbers sorted from least to greatest.
-def odd(array)
-   only_odd = array.select {|value| value.odd?}
-   only_odd.sort
-end 
+# p lowest_chars(['car','goat','house'])
+# # Create a method that takes in an array of numbers and returns only the odd numbers sorted from least to greatest.
+# def odd(array)
+#    only_odd = array.select {|value| value.odd?}
+#    only_odd.sort
+# end 
 
-p odd([7,2,13,5,7])
-# Create a method that takes in an array of strings and returns all the strings in reverse casing. All uppercase letters should be returned lowercased and all lowercased letters should be returned in uppercase letters.
+# p odd([7,2,13,5,7])
+# # Create a method that takes in an array of strings and returns all the strings in reverse casing. All uppercase letters should be returned lowercased and all lowercased letters should be returned in uppercase letters.
 
-def changed_case(array)
-    array.map do |value|
-        value.swapcase
+# def changed_case(array)
+#     array.map do |value|
+#         value.swapcase
+#     end
+# end
+
+# p changed_case(['Oscar', 'james'])
+
+
+
+# # Create a method that will take in an array of numbers and return an array with the remainder of each number when divided by 2.
+# def only_remainder(array)
+#     array.map do |value|
+#         value % 2 
+#     end
+# end
+
+# p only_remainder([11,12,13,14,15])
+# # Create a method that will take in a range of letters and return an array with all the letters capitalized.
+# def only_capletters(range)
+#     range.to_a.map do |value|
+#         value.upcase 
+#     end
+# end
+
+# p only_capletters('a'..'g')
+
+# FizzBuzz: Create a method that prints the numbers from 1 to 100. For multiples of three print Fizz instead of the number, for multiples of five print Buzz instead of the number, for numbers that are multiples of both three and five print FizzBuzz, for all other numbers print the number.
+
+# def fizz_buzz ()
+#     (1..100).each do |value|
+#         if value % 15 == 0
+#             p "FizzBuzz"
+#         elsif value % 5 == 0 
+#             p "Buzz"
+#         elsif value % 3 == 0
+#             p "Fizz"
+#         else
+#             p value
+#         end
+#     end
+# end
+
+# fizz_buzz
+
+# Create a method that takes in an array of words and returns all the words that start with a particular letter. Example: Given the array ['Apple', 'Avocado', 'Banana', 'Mango'] and the letter 'a' the method should return ['Apple', 'Avocado']. With the same method, given the letter 'm' should return ['Mango'].
+
+sample_array = ['Apple', 'Avocado', 'Banana', 'Mango']
+
+def first_letter (letter, array)
+   array.select do |value| 
+        if value.chr == letter 
+            p value
+        end
     end
 end
 
-p changed_case(['Oscar', 'james'])
+first_letter('M', sample_array)
 
-
-
-# Create a method that will take in an array of numbers and return an array with the remainder of each number when divided by 2.
-def only_remainder(array)
-    array.map do |value|
-        value % 2 
-    end
-end
-
-p only_remainder([11,12,13,14,15])
-# Create a method that will take in a range of letters and return an array with all the letters capitalized.
-def only_capletters(range)
-    range.to_a.map do |value|
-        value.upcase 
-    end
-end
-
-p only_capletters('a'..'g')
+# Create a method that takes in an array of mixed data types and returns an array without any false, null, 0, or blank values.
