@@ -70,23 +70,23 @@ palindrome('tacocat')
 # As a user, I can see a message in the terminal depicting which user won the round.
 # As a user, I can see a message in the terminal noting if there was a tie.
     def winner(firstname, secondname, firstchoice, secondchoice)
-        if firstchoice == Rock && secondchoice == Paper
+        if firstchoice == 'Rock' && secondchoice == 'Paper'
             p "#{secondname} WINS"
-        elsif firstchoice == Paper && secondchoice == Rock
+        elsif firstchoice == 'Paper' && secondchoice == 'Rock'
             p "#{firstname} WINS"
-        elsif firstchoice == Rock && secondchoice == Rock
+        elsif firstchoice == 'Rock' && secondchoice == 'Rock'
             p "IT'S A TIE" 
-        elsif firstchoice == Paper && secondchoice == Scissors
+        elsif firstchoice == 'Paper' && secondchoice == 'Scissors'
             p "#{second_name} WINS"
-        elsif firstchoice == Scissors && secondchoice == Paper
+        elsif firstchoice == 'Scissors' && secondchoice == 'Paper'
             p "#{firstname} WINS"
-        elsif first_choice == Paper && second_choice == Paper
+        elsif first_choice == 'Paper' && second_choice == 'Paper'
             p "IT'S A TIE" 
-        elsif first_choice == Rock && second_choice == Scissors
+        elsif first_choice == 'Rock' && second_choice == 'Scissors'
             p "#{firstname} WINS"    
-        elsif firstchoice == Scissors && secondchoice == Rock
+        elsif firstchoice == 'Scissors' && secondchoice == 'Rock'
             p "#{secondname} WINS" 
-        elsif firstchoice == Scissors && secondchoice == Scissors
+        elsif firstchoice == 'Scissors' && secondchoice == 'Scissors'
             p "IT'S A TIE" 
         end
     end
