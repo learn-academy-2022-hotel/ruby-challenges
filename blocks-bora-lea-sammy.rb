@@ -70,15 +70,29 @@
 
 # Create a method that takes in an array of words and returns the word with the least number of characters.
 
-# word_array = ['sammy', 'lea', 'bora']
+# word_array = ['sammy', 'bora', 'lea', 'sam', 'bo', 'leah']
 
 # def small_word(array)
-#     array.map do 
+#     array.min{|a,b| a.size <=> b.size}
 # end
 
-# small_word(word_array)
+# p small_word(word_array)
+
+# reflection: not sure how method works, found source online
 
 # Create a method that takes in an array of numbers and returns only the odd numbers sorted from least to greatest.
+
+num_array = [2000, 1992, 22, 30, 2023, 1, 7]
+
+def odd_least_greatest(array)
+    if num % 2 == 1
+        p num
+    end
+    array.sort
+end  
+
+p odd_least_greatest(num_array)
+
 # Create a method that takes in an array of strings and returns all the strings in reverse casing. All uppercase letters should be returned lowercased and all lowercased letters should be returned in uppercase letters.
 # Create a method that will take in an array of numbers and return an array with the remainder of each number when divided by 2.
 # Create a method that will take in a range of letters and return an array with all the letters capitalized.
