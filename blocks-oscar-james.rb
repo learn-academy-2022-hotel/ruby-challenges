@@ -41,12 +41,15 @@
 #     array.max 
 # end 
 # p max_num([1,2,6,4,5])
+
 # Create a method that takes in an array of words and returns the word with the least number of characters.
+
 # def lowest_chars(array)
-#       array.min
+#       array.min{ |a, b| a.size <=> b.size }
 # end
 
-# p lowest_chars(['car','goat','house'])
+# p lowest_chars(['carrrrrot','goat','house', 'car'])
+
 # # Create a method that takes in an array of numbers and returns only the odd numbers sorted from least to greatest.
 # def odd(array)
 #    only_odd = array.select {|value| value.odd?}
@@ -103,16 +106,16 @@
 
 # Create a method that takes in an array of words and returns all the words that start with a particular letter. Example: Given the array ['Apple', 'Avocado', 'Banana', 'Mango'] and the letter 'a' the method should return ['Apple', 'Avocado']. With the same method, given the letter 'm' should return ['Mango'].
 
-sample_array = ['Apple', 'Avocado', 'Banana', 'Mango']
+# sample_array = ['Apple', 'Avocado', 'Banana', 'Mango']
 
-def first_letter (letter, array)
-   array.select do |value| 
-        if value.chr == letter 
-            p value
-        end
-    end
-end
+# def first_letter (letter, array)
+#    array.select do |value| 
+#         if value.chr == letter 
+#             p value
+#         end
+#     end
+# end
 
-first_letter('M', sample_array)
+# first_letter('M', sample_array)
 
 # Create a method that takes in an array of mixed data types and returns an array without any false, null, 0, or blank values.
