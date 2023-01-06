@@ -45,13 +45,11 @@ end
 p biggest_num(numbers)
 
 # Create a method that takes in an array of words and returns the word with the least number of characters.
-# words = ["matt", "christian"]
-# # def low_word(array)
-# #     array do |val|
-# #         val
-# #     end
-# # end
-# # p low_word(words)
+words = ["matt", "christian"]
+def low_word(array)
+    array.min{|a,b| a.size <=> b.size }
+end
+p low_word(words)
 # Create a method that takes in an array of numbers and returns only the odd numbers sorted from least to greatest.
 def only_odd(array)
     array.select do |val|
