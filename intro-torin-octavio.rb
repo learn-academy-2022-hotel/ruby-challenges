@@ -70,3 +70,7 @@ p top_shows
 # p enjoyable_shows.insert(3, '7').insert(4, '12')
 
 
+nums = 1..5
+nums.map do |val|
+val
+end
