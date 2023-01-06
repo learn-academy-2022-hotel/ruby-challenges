@@ -56,3 +56,75 @@ end
 
 cleaning.is_complete 
 p cleaning
+
+# As a developer, I can create a class called ColorPalette.
+class ColorPalette
+end
+
+# As a developer, I can create three instances (objects) of class ColorPalette.
+# e.g green = ColorPalette.new
+
+green = ColorPalette.new
+blue = ColorPalette.new
+red = ColorPalette.new
+
+# As a developer, I can initialize each instance of the class ColorPalette with three colors.
+
+class ColorPalette
+  def initialize(name1, name2, name3)
+    @name1 = name1
+    @name2 = name2
+    @name3 = name3
+  end
+end
+# e.g. green = ColorPalette.new('Chartreuse', 'Kelly', 'Seafoam')
+
+green = ColorPalette.new('Charteuse', 'Kelly', 'Seafoam')
+blue = ColorPalette.new('Midnight', 'Sky', 'Ocean')
+red = ColorPalette.new('Brick', 'Maroon', 'Racecar')
+
+
+# As a developer, I can print the value of each individual color.
+p blue
+p green
+p red
+# As a developer, I can create a method called all_colors that when called will print a sentence telling me the three colors of a given palette.
+
+class ColorPalette
+  def initialize(name1, name2, name3)
+    @name1 = name1
+    @name2 = name2
+    @name3 = name3
+  end
+  def all_colors
+    "Three shades of this color are: #{@name1}, #{@name2}, and #{@name3}."
+  end
+end
+
+p blue.all_colors
+
+
+# As a developer, I can change one or more colors of a given palette.
+
+class ColorPalette
+
+  attr_accessor :name1, :name2, :name3
+
+  def initialize(name1, name2, name3)
+    @name1 = name1
+    @name2 = name2
+    @name3 = name3
+  end
+  def all_colors
+    "Three shades of this color are: #{@name1}, #{@name2}, and #{@name3}."
+  end
+  def update_color(name1, name2, name3)
+    @name1 = name1
+    @name2 = name2
+    @name3 = name3
+  end
+end
+
+p blue
+blue.update_color('Dark', 'Light', 'Navy')
+p blue
