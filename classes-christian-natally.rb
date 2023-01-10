@@ -16,14 +16,17 @@ class Task
     end  
 end
 
-laundry = Task.new
-laundry.set_name('fold', 'shirts', '20mins')
-p laundry
 
 # As a developer, I can initialize each instance of class Task with a title.
 
+laundry = Task.new
+dishes = Task.new
+takingdogout = Task.new
+laundry.set_name('fold', 'shirts', '20mins')
+p laundry
 
 # As a developer, I can see the title of each instance of class Task.
+
 
 # As a developer, I can initialize each instance of class Task with a status that has a default value of 'incomplete'.
 
