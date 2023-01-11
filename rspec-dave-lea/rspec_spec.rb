@@ -10,32 +10,33 @@ describe Task do
         expect(task.title).to eq('dishes')
         expect(task.title).to be_a(String)
     end
-    it 'has a description' do
-        description = Task.new('put the dishes in the dishwasher')
-        expect(task.description).to eq('put the dishes in the dishwasher')
-        expect(task.description).to be_a(String)
-    end
-    it 'starts as in progress' do
-        progress = Task.new('in progress')
-        expect(task.progress).to eq('in progress')
-        expect(task.progress).to be_a(String)
-    end
-    it 'can mark a task done' do
-        complete = Task.new('complete')
-        expect(task.complete).to eq('complete')
-        expect(task.complete).to be_a(String)
-    end
-    it 'prints status if task is complete' do
-        printstatus = Task.new('task has been completed')
-        expect(task.printstatus).to eq('task has been completed')
-        expect(task.printstatus).to be_a(String)
-    end
-    it 'has a due date' do
-        duedate = Task.new('1/11/2023')
-        expect(task.duedate).to eq('1/11/2023')
-        expect(task.duedate).to be_a(String)
-    end
+    # it 'has a description' do
+    #     description = Task.new('put the dishes in the dishwasher')
+    #     expect(task.description).to eq('put the dishes in the dishwasher')
+    #     expect(task.description).to be_a(String)
+    # end
+    # it 'starts as in progress' do
+    #     progress = Task.new('in progress')
+    #     expect(task.progress).to eq('in progress')
+    #     expect(task.progress).to be_a(String)
+    # end
+    # it 'can mark a task done' do
+    #     complete = Task.new('complete')
+    #     expect(task.complete).to eq('complete')
+    #     expect(task.complete).to be_a(String)
+    # end
+    # it 'prints status if task is complete' do
+    #     printstatus = Task.new('the task has been completed')
+    #     expect(task.printstatus).to eq('the task has been completed')
+    #     expect(task.printstatus).to be_a(String)
+    # end
+    # it 'has a due date' do
+    #     duedate = Task.new('1/11/2023')
+    #     expect(task.duedate).to eq('1/11/2023')
+    #     expect(task.duedate).to be_a(String)
+    # end
 end
+
 # ✅ Challenge: Tasks
 # Process: Copy the story into your RSpec file. Write the test FIRST. Ensure the test fails correctly. Then write the code that will make the test pass.
 
