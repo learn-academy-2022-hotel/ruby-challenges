@@ -26,20 +26,20 @@ animial = 'dog'
 
 p "the #{animial} is cute!"
 # Create a variable that contains a string and test some of the Ruby string methods:
-# .upcase 
+# .upcase
 p animial.upcase
 # .reverse
-p animial.reverse 
+p animial.reverse
 # .include?
-p animial.include? 'dog' 
+p animial.include? 'dog'
 # .capitalize
-p animial.capitalize 
+p animial.capitalize
 # .delete
 p animial.delete 'o'
 # .index
 p animial.index  'd'
 # .swapcase
-p animial.swapcase 
+p animial.swapcase
 # Create an array that contains the name of at least five TV shows you enjoy.
 p tvshows = ['star trek', 'rick and morty', 'inside job', 'date line', 'too hot to handle']
 # Find the length of the array.
@@ -55,3 +55,14 @@ emptytv = []
 # Using the full TV show array, add your top two favorite shows to the empty array.
 emptytv << tvshows[3, 2]
 p emptytv
+
+
+
+
+
+my_array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+my_array.each do |x|
+  if x % 2 == 0
+    p x
+  end
+end
