@@ -111,3 +111,7 @@ p cat.get_info
 # Hint: Find out how the spaceship operator can help you with an array.
 # As a developer, I can utilize a Ruby module to help DRY up my code. I can create a swim method inside of my module that will apply to Animals who can swim. This method should return "I can swim!"
 # Hint: Look into module mix ins. Since not all animals can swim, only certain Animals will have access to this module.
+
+animals = ['salmon', 'goldfish', 'cat', 'bear']
+
+puts animals.sort!{|a, b| a <=> b}
