@@ -9,6 +9,8 @@
 #     num += 1
 # end
 
+heres a little test
+
 # Create a loop that prints the numbers 1 to 20 using a different approach than previously used.
 
 # range = 1..20
